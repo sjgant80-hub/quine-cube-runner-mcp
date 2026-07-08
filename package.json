@@ -1,0 +1,40 @@
+{
+  "name": "@ai-native-solutions/quine-cube-runner-mcp",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MCP server for Quine Cube Runner - exposes template loading, sandboxed run, byte-diff verify, and mutation testing as MCP tools and resources.",
+  "main": "./src/server.js",
+  "bin": {
+    "quine-cube-runner-mcp": "./src/server.js"
+  },
+  "files": ["src/", "manifest.json", "README.md", "LICENSE"],
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "@ai-native-solutions/quine-cube-runner-sdk": "^1.0.0",
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "quine",
+    "self-replicating",
+    "sandbox",
+    "mutation-testing",
+    "ai-native-solutions"
+  ],
+  "author": "AI-Native Solutions",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sjgant80-hub/quine-cube-runner-mcp.git"
+  },
+  "homepage": "https://github.com/sjgant80-hub/quine-cube-runner-mcp",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

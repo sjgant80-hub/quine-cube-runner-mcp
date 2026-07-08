@@ -1,0 +1,22 @@
+{
+  "name": "quine-cube-runner-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Quine Cube Runner. Load, run, verify, and mutation-test the ten built-in quines from any MCP client.",
+  "transport": "stdio",
+  "command": "npx",
+  "args": ["-y", "@ai-native-solutions/quine-cube-runner-mcp"],
+  "capabilities": {
+    "tools": [
+      "quine_load_template",
+      "quine_run",
+      "quine_verify",
+      "quine_mutate_test",
+      "quine_list_templates"
+    ],
+    "resources": [
+      "quine-cube://templates",
+      "quine-cube://composition",
+      "quine-cube://lang-meta"
+    ]
+  }
+}
